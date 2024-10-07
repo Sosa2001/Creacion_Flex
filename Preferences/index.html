@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meal Preferences</title>
+</head>
+<body>
+    <div class="container";>
+        <div class="header">
+            <div class="step">
+                <span class="circle">1</span>
+                <span style="color: #14b8a6;">Cabin</span>
+            </div>
+            <div class="divider">
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+            </div>
+            <div class="step active">
+                <span class="circle1">2</span>
+                <span>Meal</span>
+            </div>
+            <div class="divider">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="step1">
+                <span class="circle2">3</span>
+                <span>Upgrades</span>
+            </div>
+            <div class="divider">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="step1">
+                <span class="circle2">4</span>
+                <span>Payment</span>
+            </div>
+        </div>
+        <h1 style="color: black;">Meals Preferences</h1>
+        <p>Your flight comes with breakfast, lunch, and dinner. Please make your selections below. Changes to your order can be made up to 48 hours before your flight.</p>
+        
+        <form class="meal-form">
+            <div class="meal-row">
+                <div class="meal-group1">
+                    <label for="breakfast">Breakfast</label>
+                    <select id="breakfast">
+                        <option value="sausage-egg-scramble-bowl">Sausage Egg Scramble Bowl</option>
+                    </select>
+                </div>
+                
+                <div class="meal-group2">
+                    <label for="drink">Drink</label>
+                    <select id="drink">
+                        <option value="coffee">Coffee</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="meal-row">
+                <div class="meal-group1">
+                    <label for="lunch">Lunch</label>
+                    <select id="lunch">
+                        <option value="club-sandwich-meal">Club Sandwich Meal</option>
+                    </select>
+                </div>
+
+                <div class="meal-group2">
+                    <label for="lunch-drink">Lunch Drink</label>
+                    <select id="lunch-drink">
+                        <option value="cranberry">Cranberry</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="meal-row">
+                <div class="meal-group1">
+                    <label for="dinner">Dinner</label>
+                    <select id="dinner">
+                        <option value="wagyu-beef-sliders">Wagyu Beef Sliders Meal</option>
+                    </select>
+                </div>
+
+                <div class="meal-group2">
+                    <label for="dinner-drink">Dinner Drink</label>
+                    <select id="dinner-drink">
+                        <option value="red-wine">Red Wine</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="dessert-option">
+                <input type="checkbox" id="dessert">
+                <label for="dessert">I'd like dessert, too!</label>
+            </div>
+            
+            <div class="buttons">
+                <button type="button" class="back-button" style="color: black;">Back</button>
+                <button type="submit" class="next-button" style="color: black;">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

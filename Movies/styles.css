@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%; /* Cambiado de max-width a width */
+    padding: 20px;
+}
+
+.card {
+    background-color: #3c3e44;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+}
+
+.character-img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover; /* Asegura que la imagen cubra el cuadrado sin distorsionarse */
+}
+
+.info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex; /* Usar flexbox para centrar elementos */
+    flex-direction: column; /* Organiza elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 5px;
+    color: #ccc;
+    display: flex; /* Usar flexbox en párrafos */
+    align-items: center; /* Centra verticalmente el texto y el círculo */
+}
+
+.status-circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dead {
+    background-color: red;
+}
+
+.alive {
+    background-color: green;
+}
+
+/* Nuevos estilos para la ubicación y la primera vista */
+.location {
+    color: #888; /* Color gris más fuerte */
+    font-size: 0.9em; /* Tamaño de letra más pequeño */
+}
